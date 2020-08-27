@@ -29,12 +29,15 @@ public class ListPerson {
 //            System.out.println("Pleas re-enter id: ");
 //        }while (true);
 
-        System.out.println("Enter role: (Accountant / SalesMan)");
+        System.out.println("Enter role: (SalesMan(1) / Accountant(2))");
+        String choice = scanner.nextLine();
         do {
-                role = scanner.nextLine();
-                if (role.equalsIgnoreCase("SalesMan") || role.equalsIgnoreCase("Accountant")) break;
-            System.out.println("Pleas re-enter role: ");
-        }while (true);
+            switch (choice) {
+                case "1" -> role = "SalesMan";
+                case "2" -> role = "Accountant";
+                default -> System.out.println("Pleas re-enter role: ");
+            }
+        } while (!role.equalsIgnoreCase("SalesMan") && !role.equalsIgnoreCase("Accountant"));
 
         if (role.equalsIgnoreCase("SalesMan")) {
             System.out.println("Enter the number of products had sold: ");
