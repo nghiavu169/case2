@@ -49,7 +49,12 @@ public class Accountant extends Person {
     }
 
     @Override
-    public void show() {
-        System.out.printf("%-5s%-20s%-15s%n", id, role, salary);
+    public String toString() {
+        return "Accountant{" +
+                "id=" + id +
+                ", OT_days=" + OT_days +
+                ", salary=" + salary +
+                ", role='" + role + '\'' +
+                '}';
     }
 }

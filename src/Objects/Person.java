@@ -30,5 +30,12 @@ public class Person implements Serializable {
         this.salary = salary;
     }
 
-    public void show(){};
+    @Override
+    public String toString() {
+        return "Person{" +
+                "id=" + id +
+                ", salary=" + salary +
+                ", role='" + role + '\'' +
+                '}';
+    }
 }

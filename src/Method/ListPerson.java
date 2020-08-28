@@ -29,7 +29,7 @@ public class ListPerson {
 //            System.out.println("Pleas re-enter id: ");
 //        }while (true);
 
-        System.out.println("Enter role: (SalesMan(1) / Accountant(2))");
+        System.out.println("Enter role:\n   1). SalesMan\n   2). Accountant");
         String choice = scanner.nextLine();
         do {
             switch (choice) {
@@ -265,5 +265,21 @@ public class ListPerson {
             }
         }
         return checkID;
+    }
+
+    public void getSalesManSalary() {
+        int SalesManSalary = 0;
+        for (Person person : list) {
+            if (person.getRole().equalsIgnoreCase("SalesMan")) SalesManSalary += person.getSalary();
+        }
+        System.out.println("Salary of Salesman: " + SalesManSalary + " VND ");
+    }
+
+    public void getAccountantSalary() {
+        int AccountantSalary = 0;
+        for (Person person : list) {
+            if (person.getRole().equalsIgnoreCase("Accountant")) AccountantSalary += person.getSalary();
+        }
+        System.out.println("Salary of Accountant: " + AccountantSalary + " VND ");
     }
 }

@@ -47,4 +47,14 @@ public class SalesMan extends Person {
     public void setSalary(int salary) {
         this.salary = salary;
     }
+
+    @Override
+    public String toString() {
+        return "SalesMan{" +
+                "id=" + id +
+                ", sold_products=" + sold_products +
+                ", salary=" + salary +
+                ", role='" + role + '\'' +
+                '}';
+    }
 }
