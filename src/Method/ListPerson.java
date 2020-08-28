@@ -8,7 +8,7 @@ import Objects.SalesMan;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class ListPerson {
+public class ListPerson implements ListInterFace {
     int id, salary, sold_products, OT_days;
     String role;
     Scanner scanner = new Scanner(System.in);
@@ -247,7 +247,6 @@ public class ListPerson {
         scanner.close();
         System.exit(0);
     }
-
 
     public Person getPersonById(int id){
         for (Person person : list) {
