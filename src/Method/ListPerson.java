@@ -272,7 +272,7 @@ public class ListPerson {
         for (Person person : list) {
             if (person.getRole().equalsIgnoreCase("SalesMan")) SalesManSalary += person.getSalary();
         }
-        System.out.println("Salary of Salesman: " + SalesManSalary + " VND ");
+        System.out.println("Salary of Salesmans: " + SalesManSalary + " VND ");
     }
 
     public void getAccountantSalary() {
@@ -280,6 +280,6 @@ public class ListPerson {
         for (Person person : list) {
             if (person.getRole().equalsIgnoreCase("Accountant")) AccountantSalary += person.getSalary();
         }
-        System.out.println("Salary of Accountant: " + AccountantSalary + " VND ");
+        System.out.println("Salary of Accountants: " + AccountantSalary + " VND ");
     }
 }
