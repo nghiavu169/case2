@@ -20,15 +20,6 @@ public class ListPerson implements ListInterFace {
 
     public void add() {
         System.out.println("\nEnter the following details to ADD list:\n");
-//        System.out.println("Enter id: ");
-//        do {
-//            try {
-//                id = Integer.parseInt(scanner.nextLine());
-//                break;
-//            }catch (Exception ignored){}
-//            System.out.println("Pleas re-enter id: ");
-//        }while (true);
-
         System.out.println("Enter role:\n   1). SalesMan\n   2). Accountant");
         String choice = scanner.nextLine();
         do {
