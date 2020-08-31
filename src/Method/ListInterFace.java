@@ -1,7 +1,6 @@
 package Method;
 
 import Objects.Person;
-
 import java.util.ArrayList;
 
 public interface ListInterFace {

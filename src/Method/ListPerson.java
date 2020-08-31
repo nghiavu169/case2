@@ -248,7 +248,7 @@ public class ListPerson implements ListInterFace {
         System.exit(0);
     }
 
-    public Person getPersonById(int id){
+    public Person getPersonById(int id) {
         for (Person person : list) {
             if (person.getId() == id) {
                 return person;
